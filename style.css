@@ -17,8 +17,20 @@ a{text-decoration:none;text-indent: 11px;}
 .headerBar{margin: 0px auto;width: 1260px;}
 .topBar{margin: 0px auto;height: 30px;background-color:rgb(245, 245, 245)}
 .leftArea li{float: left;width: 80px;text-align: center;font: 12px/2.3em "Microsoft Yahei";color:gray;}
-.bigImg{width: 1260px;height: 81px;background-color: rgb(65, 190, 240);}
+.bigImg{position: relative;display: inline-block;
+        width: 1260px;height: 81px;background-color: rgb(65, 190, 240);}
 .topBanner{width: 1230px;padding-left: 15px}
+.box .clear {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    color: gray;
+    text-align: center;
+    line-height: 15px;
+}
 /*顶部*/
 .rightArea{float:right;}
 .red{color: red;}
@@ -53,7 +65,7 @@ a{text-decoration:none;text-indent: 11px;}
 
 /*main左部分导航*/
 .mainleft a{color: white;display: block;line-height: 30px;background-color: crimson;height: 30.7px;width: 210px;}
-.mainleft a:hover{background: darkmagenta;color: darkorange}
+.mainleft a:hover{background: rgb(180, 30, 30);color: rgb(220, 150, 0)}
 
 /*main右部分*/
 .mainrtop{width: 990px;height: 32px;}
