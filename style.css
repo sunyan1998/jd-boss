@@ -44,9 +44,9 @@ a{text-decoration:none;text-indent: 11px;}
 .FirstLeft{float: left;width:350px;height:60px;}
 .Fsearch{float: left;width: 565px;height: 70px;}
 /*搜索框*/
-.searchTop{margin: 5px 5px 5px 15px;}
-.searchtext{width: 460px;height: 36px;border-style: solid;border-color: firebrick;border-width: 1.5px;font-size: 13px;text-indent: 5px;}
-.searchclick{width: 80px;height: 39px;background-color: firebrick;font-size: 14px;border-bottom-style: solid;border-bottom-color: firebrick;border-bottom-width: 3px;color: white}
+.searchTop{margin: 5px 5px 5px 15px;border-style: solid;border-color: firebrick;border-width: 1.5px}
+.searchtext{width: 462px;height: 36px;font-size: 13px;text-indent: 5px;}
+.searchclick{width: 80px;height: 39px;background-color: firebrick;font-size: 14px;color: white}
 /*搜索框下行字*/
 .searchList li{float: left;text-indent:11px;font: 10px/1.2em "Microsoft Yahei";}
 .searchList a{color:gray;}
@@ -59,45 +59,50 @@ a{text-decoration:none;text-indent: 11px;}
 .cartimg img{margin-top: -51px;}
 
 /*main*/
-.main{margin: 0px auto;width:1230px;height: 500px;}
-.mainleft{float: left;width: 210px;height: 500px;}
-.mainright{float: right;width: 1020px;height: 500px;}
+.main{margin: 0px auto;width:1230px;height: 510px;}
+.mainleft{float: left;width: 210px;height: 510px;}
+.mainright{float: right;width: 1020px;height: 510px;}
 
-/*main左部分导航*/
-.mainleft a{color: white;display: block;line-height: 30px;background-color: crimson;height: 30.7px;width: 210px;}
+/*main左部分导航栏*/
+.mainleft a{color: white;display: block;line-height: 30px;background-color: crimson;height: 31.3px;width: 210px;}
 .mainleft a:hover{background: rgb(180, 30, 30);color: rgb(220, 150, 0)}
 
-/*main右部分*/
+/*main zh右部分*/
 .mainrtop{width: 990px;height: 32px;}
 .mainrleft{margin: 0px 5px 0px 10px;float:left;width: 750px;height: 440px;}
 .mainrright{margin: 0px 10px 0px 5px;float:left;width: 230px;height: 440px;}
-/*右上导航条*/
+/*zh右上导航条*/
 .mainrtop li{float: left;text-indent: 49px;}
 .mainrtop a{color:black;font: 14px/3em "Microsoft Yahei";}
 .mainrtop a:hover{color: firebrick;}
 .mainrtopimg{float: left;width: 100px;height: 50px;}
 .img2{margin: -15px 50px 0px 110px;}
-.hr{width: 1020px;background-color: firebrick}
-/*右下*/
+.hr{width: 1020px;height: 1.5px;background-color: firebrick}
+/*zh右下*/
 /*滚动*/
-.slide{width: 750px;height: 450px;}
+.slide{width: 750px;height: 460px;}
 /*最右*/
 .mrcase{width: 247px;height: 368px;border-style: solid;border-color: gainsboro;border-width: 1.5px;}
 
 /*最右上表*/
 .mrfir{width: 248px;height: 160px;border-bottom-style: dashed;border-bottom-color: gainsboro;border-bottom-width: 1.5px;}
-.mrfir li{line-height: 20px;height: 25px;width: 230px;font: 12px/1.5em "Microsoft Yahei";text-indent: 30px;color: gray}
+.mrfir li{line-height: 20px;height: 25px;width: 230px;font: 12px/1.5em "Microsoft Yahei";text-indent: 25px;color: gray}
 .mrfir a{color: gray}
+.mrfir a:hover{color:firebrick;}
 /*小case*/
 .firstone,.firsttwo,.firstthree,.secondone,.secondtwo,.secondthree,.thirdone,.thirdtwo,.thirdthree{
-    margin-top: -1px 0px 0px -1px;float: left;width: 62px;height: 68px;text-align:center;
+    margin-top: -1px 0px 0px -1px;float: left;width: 62px;height: 68px;
     border-right-style: solid;border-right-color: gainsboro;border-right-width: 1.5px;
     border-bottom-style: solid;border-bottom-color: gainsboro;border-bottom-width: 1.5px;}
-.mrsec a{font: 12px/1.5em "Microsoft Yahei";line-height: 105px;}
+
+.mrsec .secondoneimg{float: left;margin: 15px 0px 0px 20px;width: 25px;height: 25px;overflow: hidden;}
+.phmoney{width: 50px;text-indent: 20px;}
+
+.mrsec a{font: 12px/1.5em "Microsoft Yahei";line-height: 30px;text-indent: 20px;}
 .mrsec a:hover{color: firebrick;}
 
 .mrbottomimg{margin: 5px 0px 0px;}
-.img3{width: 250px;height: 74px;}
+.img3{width: 250px;height: 84px;}
 
 /*今日推荐*/
 .recommend{margin: 10px auto;width: 1230px;height: 150px;}
