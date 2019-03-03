@@ -1,4 +1,4 @@
-body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form{margin: 0; padding: 0;}
+*{margin: 0; padding: 0;}
 body{font:14px/1.5 "Microsoft Yahei";}
 img{border:none;}
 ul,ol{list-style:none;}
@@ -13,13 +13,27 @@ a{text-decoration:none;text-indent: 11px;}
 /*box*/
 .box{width: 1260px;margin: 0px auto;}
 
-/*headBar*/
+/*顶部导航栏框架*/
 .headerBar{margin: 0px auto;width: 1260px;}
-.topBar{margin: 0px auto;height: 30px;background-color:rgb(245, 245, 245)}
+.topBar{margin: 0px auto;height: 30px;background-color:rgb(245, 245, 245);
+        border-bottom-style: solid;border-bottom-width: 0.5px;border-bottom-color: gainsboro}
 .leftArea li{float: left;width: 80px;text-align: center;font: 12px/2.3em "Microsoft Yahei";color:gray;}
+/*顶部主要导航栏*/
+.rightArea{float:right;position: relative;}
+.rightArea a{color: gray}
+.rightArea a:hover{color: red;}
+.rightArea li{float: left;position: relative;font: 12px/2.3em "Microsoft Yahei";color: rgb(206, 205, 205);text-indent: 10px;}
+.rightArea li:hover ul{display: block;}
+.phone{margin:2px 0px 0px 7px;position: absolute;clip:rect(0px,15px,20px,0px);}
+
+.xiala{position: absolute;left: 0px;top: 30px;z-index: 100;display: none;border-style: solid;border-width: 0.5px;border-color: gainsboro;border-top: none}
+.xiala li{float: none;width: 90px;background-color: rgb(245, 245, 245);}
+
+/*顶部王老吉图片*/
 .bigImg{position: relative;display: inline-block;
-        width: 1260px;height: 81px;background-color: rgb(65, 190, 240);}
+    width: 1260px;height: 82px;background-color: rgb(65, 190, 240);}
 .topBanner{width: 1230px;padding-left: 15px}
+/*点击按钮关闭图片*/
 .box .clear {
     position: absolute;
     top: 0;
@@ -31,22 +45,15 @@ a{text-decoration:none;text-indent: 11px;}
     text-align: center;
     line-height: 15px;
 }
-/*顶部*/
-.rightArea{float:right;}
-.red{color: red;}
-.redd,.gray{color:gray;}
-.redd:hover{color: red;}
-.rightArea li{float: left;width: 70px;font: 12px/2.3em "Microsoft Yahei";color: rgb(206, 205, 205);}
-.phone{margin:2px 0px 0px 9px;position:absolute;clip:rect(0px,15px,20px,0px);}
 
-/*First*/
+/*First搜索栏*/
 .First{margin: 15px auto 5px;width:1230px;height: 70px;}
 .FirstLeft{float: left;width:350px;height:60px;}
 .Fsearch{float: left;width: 565px;height: 70px;}
 /*搜索框*/
 .searchTop{margin: 5px 5px 5px 15px;border-style: solid;border-color: firebrick;border-width: 1.5px}
-.searchtext{width: 462px;height: 36px;font-size: 13px;text-indent: 5px;}
-.searchclick{width: 80px;height: 39px;background-color: firebrick;font-size: 14px;color: white}
+.searchtext{width: 462px;height: 35px;font-size: 13px;text-indent: 5px;}
+.searchclick{width: 80px;height: 36px;background-color: firebrick;font-size: 14px;color: white}
 /*搜索框下行字*/
 .searchList li{float: left;text-indent:11px;font: 10px/1.2em "Microsoft Yahei";}
 .searchList a{color:gray;}
@@ -65,28 +72,32 @@ a{text-decoration:none;text-indent: 11px;}
 
 /*main左部分导航栏*/
 .mainleft a{color: white;display: block;line-height: 30px;background-color: crimson;height: 31.3px;width: 210px;}
-.mainleft a:hover{background: rgb(180, 30, 30);color: rgb(220, 150, 0)}
+.mainleft a:hover{background: rgb(200, 25, 40);color: rgb(250, 160, 160)}
+
+.mainleft li{position: relative;}
+.mainleft ul li:hover ul{display: block;}
+.youla{position: absolute;top:0;left: 210px;z-index: 100;display: none;float: left;border-style: solid;border-width: 0.5px;border-color: gainsboro;border-top: none}
+.youla li{float: none;width: 100px;}
 
 /*main zh右部分*/
-.mainrtop{width: 990px;height: 32px;}
+.mainrtop{width: 1020px;height: 38px;border-bottom-style: solid;border-bottom-color: firebrick;border-bottom-width: 1.5px}
 .mainrleft{margin: 0px 5px 0px 10px;float:left;width: 750px;height: 440px;}
-.mainrright{margin: 0px 10px 0px 5px;float:left;width: 230px;height: 440px;}
+.mainrright{margin: 0px 0px 0px 5px;float:left;width: 250px;height: 440px;}
 /*zh右上导航条*/
 .mainrtop li{float: left;text-indent: 49px;}
 .mainrtop a{color:black;font: 14px/3em "Microsoft Yahei";}
 .mainrtop a:hover{color: firebrick;}
+/*冠军惊喜趴图片*/
 .mainrtopimg{float: left;width: 100px;height: 50px;}
-.img2{margin: -15px 50px 0px 110px;}
-.hr{width: 1020px;height: 1.5px;background-color: firebrick}
+.img2{margin: -16px 50px 0px 110px;}
 /*zh右下*/
 /*滚动*/
 .slide{width: 750px;height: 460px;}
 /*最右*/
 .mrcase{width: 247px;height: 368px;border-style: solid;border-color: gainsboro;border-width: 1.5px;}
-
 /*最右上表*/
 .mrfir{width: 248px;height: 160px;border-bottom-style: dashed;border-bottom-color: gainsboro;border-bottom-width: 1.5px;}
-.mrfir li{line-height: 20px;height: 25px;width: 230px;font: 12px/1.5em "Microsoft Yahei";text-indent: 25px;color: gray}
+.mrfir li{line-height: 25px;height: 25px;width: 230px;text-indent: 25px;color: gray}
 .mrfir a{color: gray}
 .mrfir a:hover{color:firebrick;}
 /*小case*/
@@ -133,7 +144,7 @@ a{text-decoration:none;text-indent: 11px;}
 .us ul{padding-left: 70px}
 .us li{float: left;line-height: 45px;text-indent: 10px;color: gainsboro;}
 .us a:hover{color: firebrick;}
-/*ules最后四行字*/
+/*最后四行字*/
 .uless li{float: left;line-height: 20px;text-indent: 10px;color: gainsboro;}
 .uless span{font: 12px/1.5em "Microsoft Yahei";color: rgb(150, 150, 150)}
 .uless a{color: rgb(150, 150, 150)}
