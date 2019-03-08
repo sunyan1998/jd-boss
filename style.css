@@ -67,10 +67,8 @@ a{text-decoration:none;text-indent: 11px;}
 
 /*main*/
 .main{margin: 0px auto;width:1230px;height: 510px;}
-.mainleft{float: left;width: 210px;height: 510px;}
-.mainright{float: right;width: 1020px;height: 510px;}
-
 /*main左部分导航栏*/
+.mainleft{float: left;width: 210px;height: 510px;}
 .mainleft a{color: white;display: block;line-height: 30px;background-color: crimson;height: 31.3px;width: 210px;}
 .mainleft a:hover{background: rgb(200, 25, 40);color: rgb(250, 160, 160)}
 
@@ -80,20 +78,35 @@ a{text-decoration:none;text-indent: 11px;}
 .youla li{float: none;width: 100px;}
 
 /*main zh右部分*/
-.mainrtop{width: 1020px;height: 38px;border-bottom-style: solid;border-bottom-color: firebrick;border-bottom-width: 1.5px}
-.mainrleft{margin: 0px 5px 0px 10px;float:left;width: 750px;height: 440px;}
-.mainrright{margin: 0px 0px 0px 5px;float:left;width: 250px;height: 440px;}
+.mainright{float: right;width: 1020px;height: 510px;}
 /*zh右上导航条*/
+.mainrtop{width: 1020px;height: 38px;border-bottom-style: solid;border-bottom-color: firebrick;border-bottom-width: 1.5px}
 .mainrtop li{float: left;text-indent: 49px;}
 .mainrtop a{color:black;font: 14px/3em "Microsoft Yahei";}
 .mainrtop a:hover{color: firebrick;}
 /*冠军惊喜趴图片*/
 .mainrtopimg{float: left;width: 100px;height: 50px;}
 .img2{margin: -16px 50px 0px 110px;}
+
 /*zh右下*/
-/*滚动*/
-.slide{width: 750px;height: 460px;}
+.mainrbottom{position: relative;}
+.mainrleft{float:left;width: 750px;height: 440px;}
+/*焦点轮播图*/
+#slideshow{margin-left: 10px;position: relative;overflow: hidden;width: 750px;height: 460px;}
+#list{position: absolute;z-index: 1;width: 5250px;height: 460px;}
+#list img{float: left;width: 750px;height: 460px;}
+#buttons{position: absolute;z-index: 2;width: 100px;height: 10px;bottom: 20px;left: 330px}
+#buttons span{cursor: pointer;float: left;border:1px solid gray;width: 10px;height: 10px;border-radius:50%; background: gainsboro;margin-left: 5px}
+#buttons .on{background: gray}
+.arrow{cursor: pointer;display: none;position: absolute;z-index: 2;top:200px;background-color: RGBA(0,0,0,.2);border-radius:15%;color: gainsboro;
+       width: 25px;height: 60px;font-size: 20px;font-weight: bold;line-height: 55px;text-indent: 6px}
+.arrow:hover{background-color: RGBA(0,0,0,.5);}
+#slideshow:hover .arrow{display: block}
+#prev{left:0px}
+#next{right:0px}
+
 /*最右*/
+.mainrright{position: absolute;top:10px;left: 765px;margin: 0px 0px 0px 5px;float:left;width: 250px;height: 440px;}
 .mrcase{width: 247px;height: 368px;border-style: solid;border-color: gainsboro;border-width: 1.5px;}
 /*最右上表*/
 .mrfir{width: 248px;height: 160px;border-bottom-style: dashed;border-bottom-color: gainsboro;border-bottom-width: 1.5px;}
@@ -115,10 +128,28 @@ a{text-decoration:none;text-indent: 11px;}
 .mrbottomimg{margin: 5px 0px 0px;}
 .img3{width: 250px;height: 84px;}
 
+
+
+
+
+
 /*今日推荐*/
 .recommend{margin: 10px auto;width: 1230px;height: 150px;}
 .today{float: left;width: 210px;height: 150px;background:url(img/today.png) repeat;background-position:90% 90%;background-size: 80% 80%;}
-.imges img{float: right;width: 255px;height: 150px;}
+
+#slideshow1{position: relative;overflow: hidden;width: 1020px;height: 150px;}
+#list1{position: absolute;z-index: 1;width: 2550px;height: 150px;}
+#list1 img{float: left;width: 255px;height: 150px;}
+.arrow1{cursor: pointer;display: none;position: absolute;z-index: 2;top:60px;background-color: RGBA(0,0,0,.2);border-radius:15%;color: gainsboro;
+       width: 25px;height: 60px;font-size: 20px;font-weight: bold;line-height: 55px;text-indent: 6px}
+.arrow1:hover{background-color: RGBA(0,0,0,.5);}
+#slideshow1:hover .arrow1{display: block}
+#prev1{left:0px}
+#next1{right:0px}
+
+
+
+
 
 /*底部*/
 /*多快好省*/
