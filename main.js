@@ -55,7 +55,6 @@ window.onload = function() {
             next.onclick();
         }, 3000);
     }
-
     function stop() {
         clearInterval(timer);
     }
@@ -106,7 +105,6 @@ window.onload = function() {
 
     slideshow.onmouseover = stop;
     slideshow.onmouseout = play;
-    
     play();
 
 /* 今日推荐轮播图*/
@@ -152,6 +150,7 @@ window.onload = function() {
             animate1(255);
         }
     }
+
     slideshow1.onmouseover = stop1;
     slideshow1.onmouseout = play1;
     play1();
