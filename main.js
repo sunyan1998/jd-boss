@@ -7,13 +7,6 @@ window.onload = function() {
     var index = 1;
     var animated = false;
     var timer;
-
-    var slideshow1 = document.getElementById('slideshow1');
-    var list1 = document.getElementById('list1');
-    var prev1 = document.getElementById('prev1');
-    var next1 = document.getElementById('next1');
-    var animated1 = false;
-    var timer1;
     
     function showButton() {
         for(var i = 0; i < buttons.length; i++){
@@ -102,12 +95,18 @@ window.onload = function() {
             showButton();
         }
     }
-
     slideshow.onmouseover = stop;
     slideshow.onmouseout = play;
     play();
 
 /* 今日推荐轮播图*/
+    var slideshow1 = document.getElementById('slideshow1');
+    var list1 = document.getElementById('list1');
+    var prev1 = document.getElementById('prev1');
+    var next1 = document.getElementById('next1');
+    var animated1 = false;
+    var timer1;
+
     function animate1(offset1) {
         var newLeft = parseInt(list1.style.left) + offset1;
         var time = 500;
@@ -150,8 +149,40 @@ window.onload = function() {
             animate1(255);
         }
     }
-
     slideshow1.onmouseover = stop1;
     slideshow1.onmouseout = play1;
     play1();
+
+/* 回顶操作*/
+    var btn = document.getElementById('btn');
+    var timer0;
+    var isTop = true;
+    var clientHeight = document.documentElement.clientHeight;
+
+    window.onscroll = function() {
+        var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(osTop >= clientHeight){
+            btn.style.display = 'block';
+        }else{
+            btn.style.display = 'none';
+        }
+        if(!isTop){
+            clearInterval(timer0);
+        }
+        isTop = false;
+    }
+
+    btn.onclick = function() {
+        timer0 = setInterval(function(){
+            var osTop = document.documentElement.scrollTop || document.body.scrollTop;
+            var ispeed = Math.floor(- osTop / 5);
+            document.documentElement.scrollTop = document.body.scrollTop = osTop + ispeed;
+
+            isTop = true;
+            console.log(osTop - ispeed);
+            if(osTop == 0){
+                clearInterval(timer0);
+            }
+        },30)
+    }
 }

@@ -178,6 +178,6 @@ a{text-decoration:none;text-indent: 11px;}
 .app li{float: left;text-indent: 10px}
 
 /*回顶*/
-#btn{width: 40px;height: 40px;margin-left: 95%;z-index: 3;
+#btn{width: 40px;height: 40px;display: none;margin-left: 95%;z-index: 3;
      position: fixed;bottom: 30px;background:url(img/b_top.jpg) no-repeat left top}
 #btn:hover{background: url(img/b_top.jpg) 0px -40px}
